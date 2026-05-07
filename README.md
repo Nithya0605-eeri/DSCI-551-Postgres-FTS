@@ -120,3 +120,38 @@ The goal of this project is to improve search performance on text data by using 
 ### 1. Start PostgreSQL
 ```bash
 docker start dsci551-postgres
+
+## Run Application
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run the Streamlit app:
+
+streamlit run app/app.py
+
+Open in browser:
+
+http://localhost:8501
+
+## How to Reproduce Results
+
+1. Start PostgreSQL using Docker
+2. Run schema.sql to create tables
+3. Insert sample data
+4. Run Streamlit application
+5. Search using keywords like "database"
+6. Observe results and query performance
+
+## Dataset
+
+This project uses synthetic data inserted using SQL scripts. No external dataset is required.
+
+## Credentials
+
+No external API keys are required.
+
+Database connection uses:
+- user: postgres
+- password: postgres
