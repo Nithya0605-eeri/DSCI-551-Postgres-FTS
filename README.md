@@ -64,3 +64,59 @@ README.md → setup instructions
 ## Conclusion
 
 This project demonstrates how PostgreSQL’s internal indexing mechanisms significantly improve search performance in text-based applications.
+# PostgreSQL Full-Text Search Project
+
+## Setup
+
+1. Start PostgreSQL:
+docker start dsci551-postgres
+
+2. Connect:
+docker exec -it dsci551-postgres psql -U postgres -d articles_db
+
+3. Run schema:
+\i schema/schema.sql
+
+## Features
+- Full-text search using tsvector and tsquery
+- GIN index
+- EXPLAIN ANALYZE performance analysis
+# PostgreSQL Full-Text Search with GIN Indexing
+
+This project demonstrates a lightweight article search system using PostgreSQL full-text search, tsvector, tsquery, and GIN indexing.
+
+## Project Overview
+
+The goal of this project is to improve search performance on text data by using PostgreSQL full-text search instead of scanning every row.
+
+## Features
+
+- Full-text search using tsvector and tsquery
+- GIN index for faster keyword lookup
+- EXPLAIN ANALYZE for query plan inspection
+- Simple Streamlit app for article search
+
+## Setup Instructions
+
+### 1. Start PostgreSQL
+```bash
+docker start dsci551-postgres# PostgreSQL Full-Text Search with GIN Indexing
+
+This project demonstrates a lightweight article search system using PostgreSQL full-text search, tsvector, tsquery, and GIN indexing.
+
+## Project Overview
+
+The goal of this project is to improve search performance on text data by using PostgreSQL full-text search instead of scanning every row.
+
+## Features
+
+- Full-text search using tsvector and tsquery
+- GIN index for faster keyword lookup
+- EXPLAIN ANALYZE for query plan inspection
+- Simple Streamlit app for article search
+
+## Setup Instructions
+
+### 1. Start PostgreSQL
+```bash
+docker start dsci551-postgres
